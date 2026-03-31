@@ -12,6 +12,10 @@ This project presents an **extractive text summarization system** that uses **Ma
 The system generates concise summaries while maintaining interpretability through sentence-level scoring and highlighting.
 
 ---
+## Demo Link :
+https://pubmedsummarizernlp.streamlit.app/
+
+---
 
 ## 🚀 Features
 
