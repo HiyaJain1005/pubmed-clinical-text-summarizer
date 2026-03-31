@@ -2,6 +2,5 @@ streamlit
 numpy
 pandas
 scikit-learn
-nltk
 joblib
 PyPDF2
