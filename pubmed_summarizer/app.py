@@ -4,7 +4,6 @@ import pandas as pd
 import joblib
 import os
 import re
-import nltk
 
 from utils import preprocess_sentence
 
@@ -22,7 +21,7 @@ def setup_nltk():
     except LookupError:
         nltk.download('punkt')
 
-setup_nltk()
+
 
 # ---------------------- SIMPLE SENTENCE SPLITTER ----------------------
 def split_sentences(text):
