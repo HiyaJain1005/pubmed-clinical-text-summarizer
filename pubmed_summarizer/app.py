@@ -10,8 +10,9 @@ from utils import split_sentences, preprocess_sentence
 # ---------------------- CONFIG ----------------------
 st.set_page_config(page_title="PubMed Summarizer", layout="wide")
 
-MODEL_PATH = "models/model.pkl"
-VECTORIZER_PATH = "models/vectorizer.pkl"
+MODEL_PATH = "pubmed_summarizer/models/model.pkl"
+VECTORIZER_PATH = "pubmed_summarizer/models/vectorizer.pkl"
+
 
 # ---------------------- STYLING ----------------------
 st.markdown("""
