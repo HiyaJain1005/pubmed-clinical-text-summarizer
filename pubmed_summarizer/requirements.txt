@@ -1,6 +1,7 @@
 streamlit
-pandas
 numpy
-nltk
+pandas
 scikit-learn
+nltk
 joblib
+PyPDF2
