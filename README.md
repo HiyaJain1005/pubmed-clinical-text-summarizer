@@ -26,38 +26,25 @@ The system generates concise summaries while maintaining interpretability throug
 
 ## 🧠 Methodology
 
-
 The system follows a structured NLP pipeline:
+
+```
 Input Text
-↓
+   ↓
 Sentence Tokenization
-↓
+   ↓
 Text Preprocessing (Stopword Removal, Lemmatization)
-↓
+   ↓
 TF-IDF Vectorization
-↓
+   ↓
 Logistic Regression Classification
-↓
+   ↓
 Sentence Scoring
-↓
+   ↓
 Top Sentence Selection
-↓
+   ↓
 Final Summary Output
-
-
----
-
-## 🤖 Model Details
-
-### TF-IDF Vectorization
-- Converts text into numerical feature vectors  
-- Captures importance of words in context  
-
-### Logistic Regression
-- Classifies sentences based on importance  
-- Outputs probability scores for ranking  
-
----
+```
 
 ---
 
@@ -94,53 +81,83 @@ The project includes an interactive web application where users can:
 ---
 
 ## 📂 Project Structure
-pubmed_summarizer/
-│
-├── app.py # Streamlit application
-├── train_model.py # Model training script
-├── utils.py # Text preprocessing & helpers
-├── models/
-│ ├── model.pkl
-│ └── vectorizer.pkl
-├── data/ # Dataset (train/test/val)
-└── README.md
 
+```
+pubmed-clinical-text-summarizer/
+│
+├── app.py                # Streamlit application
+├── train_model.py        # Model training script
+├── utils.py              # Text preprocessing & helpers
+├── requirements.txt
+├── README.md
+│
+├── models/
+│   ├── model.pkl
+│   └── vectorizer.pkl
+│
+└── data/                 # Dataset (train/test/val)
+```
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation & Setup
 
 ```bash
-git clone https://github.com/your-username/pubmed-summarizer.git
-cd pubmed-summarizer
+git clone https://github.com/your-username/pubmed-clinical-text-summarizer.git
+cd pubmed-clinical-text-summarizer
 
 python -m venv venv
 venv\Scripts\activate   # Windows
 
 pip install -r requirements.txt
+```
 
-streamlit run app.py
 ---
-📈 Results
-Generates concise summaries from long biomedical text
-Highlights key sentences for interpretability
-Maintains essential context and meaning
-⚠️ Limitations
-Extractive only (does not generate new sentences)
-Limited contextual understanding
-Summary coherence depends on sentence order
-Performance depends on dataset quality
-🔮 Future Scope
-Abstractive summarization using transformers (BERT, T5)
-Multilingual biomedical summarization
-Integration with clinical decision-support systems
-Domain-specific fine-tuning
-🧩 Tech Stack
-Python
-NLTK
-Scikit-learn
-Streamlit
-Pandas, NumPy
 
-Author
+## ▶️ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📈 Results
+
+- Generates concise summaries from long biomedical text  
+- Highlights key sentences for interpretability  
+- Maintains essential context and meaning  
+
+---
+
+## ⚠️ Limitations
+
+- Extractive only (does not generate new sentences)  
+- Limited contextual understanding  
+- Summary coherence depends on sentence order  
+- Performance depends on dataset quality  
+
+---
+
+## 🔮 Future Scope
+
+- Abstractive summarization using transformer models (BERT, T5)  
+- Multilingual biomedical summarization  
+- Integration with clinical decision-support systems  
+- Domain-specific fine-tuning  
+
+---
+
+## 🧩 Tech Stack
+
+- Python  
+- NLTK  
+- Scikit-learn  
+- Streamlit  
+- Pandas, NumPy  
+
+---
+
+## 👩‍💻 Author
+
 Hiya Jain
